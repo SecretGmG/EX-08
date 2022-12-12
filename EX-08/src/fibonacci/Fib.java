@@ -13,8 +13,10 @@ public class Fib {
 	/*
 	 * This function gets increasingly slower with bigger inputs
 	 * this is because every call to fib calls fib TWICE.
-	 * Therefore fib is called a number of times that grows exponential with the size
-	 * of the input number
+	 * Therefore fib is called a number of times that grows exponential
+	 * (probably, it might also not be exponential but something similar)
+	 *  with the size of the input number.
+	 *  
 	 */
 	
 	
