@@ -1,3 +1,6 @@
+//Sigrist Cedric 22-120-844
+//Moritz Scholz 22-122-071package bag;
+
 package bag;
 
 public class Bag {
@@ -6,7 +9,7 @@ public class Bag {
 	
 	
 	boolean isEmpty = true;
-	Bag inner = null;
+	Bag next = null;
 	int value = 0;	
 		
 	/** constructs an empty Bag */
@@ -17,17 +20,17 @@ public class Bag {
 	public Bag(int value) {
 		this.isEmpty = false;
 		this.value = value;
-		this.inner = new Bag();
+		this.next = new Bag();
 	}
 	/** if 'this' is empty adds the value, else adds the value recursively to the inner bag */
 	public void addValue(int value) {
 		if(this.isEmpty) {
 			isEmpty = false;
 			this.value = value;
-			this.inner = new Bag();
+			this.next = new Bag();
 		}
 		else {
-			this.inner.addValue(value);
+			this.next.addValue(value);
 		}
 	}
 	/** overrides toString() */
@@ -36,7 +39,7 @@ public class Bag {
 			return EMPTY_DISPLAY_TEXT;
 		}
 		else {
-			return String.format("(%d,%s)", this.value, this.inner);
+			return String.format("(%d,%s)", this.value, this.next);
 		}
 	}
 	

@@ -1,5 +1,6 @@
+//Sigrist Cedric 22-120-844
+//Moritz Scholz 22-122-071package activity;
 package activity;
-
 
 import java.util.ArrayList;
 import java.util.Arrays;

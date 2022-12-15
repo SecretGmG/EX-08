@@ -1,3 +1,6 @@
+//Sigrist Cedric 22-120-844
+//Moritz Scholz 22-122-071
+
 package maze;
 
 public class Maze {
@@ -12,6 +15,10 @@ public class Maze {
 	 * die auf Orte hinweisen, die ausprobiert wurden und die schliesslich Teil der
 	 * L¨osung werden.
 	 */
+	/**
+	 * Der code wurde so modifizeirt, dass er einen String ausgibt der mit dem onlinetool
+	 * graphviz in ein aufrufdiagramm umgewandelt werden kann.
+	 * */
 	public boolean traverse(int row, int column) {
 		
 		String node = Integer.toString(nodeIdentifier++);
